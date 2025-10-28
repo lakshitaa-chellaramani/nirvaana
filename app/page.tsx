@@ -29,15 +29,22 @@ export default function Home() {
         <div className="absolute inset-0 scanlines"></div>
         <div className="absolute inset-0 vhs-effect"></div>
 
-        {/* Accent glow lines */}
-        <div className="absolute top-0 left-1/4 glow-line-vertical hidden md:block" style={{ animationDelay: '0s' }}></div>
-        <div className="absolute top-0 right-1/4 glow-line-vertical hidden md:block" style={{ animationDelay: '2s' }}></div>
-
         {/* Floating vintage elements - positioned safely within viewport */}
-        <VinylRecord className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-24 md:h-24 opacity-20 hidden sm:block animate-float-slow text-vintage-purple" style={{ animationDelay: '0.5s' }} />
-        <CassetteIcon className="absolute top-40 right-4 md:right-20 w-24 h-24 md:w-32 md:h-32 opacity-15 animate-float-slow hidden sm:block text-vintage-teal" style={{ animationDelay: '1s' }} />
-        <VinylRecord className="absolute bottom-32 right-8 md:right-32 w-16 h-16 md:w-20 md:h-20 opacity-15 hidden sm:block animate-float-slow text-vintage-orange" style={{ animationDelay: '1.5s' }} />
+        {/* Top row */}
+        <VinylRecord className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-24 md:h-24 opacity-15 hidden sm:block animate-float-slow text-vintage-purple" style={{ animationDelay: '0.5s' }} />
+        <CameraIcon className="absolute top-16 left-1/4 w-16 h-16 md:w-20 md:h-20 opacity-10 hidden lg:block animate-float-slow text-vintage-orange" style={{ animationDelay: '1.2s' }} />
+        <StereoIcon className="absolute top-24 right-1/4 w-20 h-20 md:w-24 md:h-24 opacity-12 hidden lg:block animate-float-slow text-vintage-teal" style={{ animationDelay: '2.5s' }} />
+        <CassetteIcon className="absolute top-40 right-4 md:right-20 w-24 h-24 md:w-32 md:h-32 opacity-12 animate-float-slow hidden sm:block text-vintage-teal" style={{ animationDelay: '1s' }} />
+
+        {/* Middle row */}
+        <HeadphoneIcon className="absolute top-1/3 left-8 w-14 h-14 md:w-18 md:h-18 opacity-8 hidden md:block animate-float-slow text-vintage-pink" style={{ animationDelay: '3s' }} />
+        <FilmIcon className="absolute top-1/3 right-8 w-14 h-14 md:w-18 md:h-18 opacity-8 hidden md:block animate-float-slow text-vintage-yellow" style={{ animationDelay: '3.5s' }} />
+
+        {/* Bottom row */}
+        <VHSIcon className="absolute bottom-40 left-12 md:left-24 w-18 h-18 md:w-22 md:h-22 opacity-10 hidden md:block animate-float-slow text-vintage-brown" style={{ animationDelay: '4s' }} />
+        <VinylRecord className="absolute bottom-32 right-8 md:right-32 w-16 h-16 md:w-20 md:h-20 opacity-12 hidden sm:block animate-float-slow text-vintage-orange" style={{ animationDelay: '1.5s' }} />
         <CassetteIcon className="absolute bottom-20 left-8 md:left-32 w-20 h-20 md:w-28 md:h-28 opacity-10 animate-float-slow hidden sm:block text-vintage-pink" style={{ animationDelay: '2s' }} />
+        <CameraIcon className="absolute bottom-16 right-1/4 w-16 h-16 md:w-20 md:h-20 opacity-8 hidden lg:block animate-float-slow text-vintage-purple" style={{ animationDelay: '4.5s' }} />
 
         <div className="container mx-auto px-4 z-10 max-w-full">
           <div className="text-center">
@@ -85,22 +92,38 @@ export default function Home() {
       </section>
 
       {/* Day 1: Ideathon Section */}
-      <section className="py-20 bg-gradient-to-b from-vintage-cream to-vintage-yellow relative overflow-hidden">
-        <div className="absolute inset-0 circuit-board opacity-30"></div>
-        <div className="absolute inset-0 tech-dots opacity-20"></div>
+      <section className="py-20 relative overflow-hidden">
+        {/* Stunning animated background layers */}
+        <div className="absolute inset-0 teal-gradient-animated"></div>
+        <div className="absolute inset-0 orange-waves"></div>
+        <div className="absolute inset-0 floating-orbs"></div>
+        <div className="absolute inset-0 circuit-board opacity-20"></div>
+        <div className="absolute inset-0 tech-dots opacity-15"></div>
+        <div className="absolute inset-0 retro-grid opacity-10"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
-              <CassetteIcon className="w-24 h-24 md:w-32 md:h-32 text-vintage-teal animate-float drop-shadow-lg" />
+              <CassetteIcon className="w-24 h-24 md:w-32 md:h-32 text-vintage-purple animate-icon-wobble drop-shadow-2xl" />
             </div>
-            <RetroHeading level={1} color="text-vintage-teal">
+            <RetroHeading level={1} color="text-vintage-purple">
               DAY 1: IDEATHON
             </RetroHeading>
+
+            {/* Event Date and Prize Pool */}
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <div className="border-2 border-vintage-orange rounded-lg px-6 py-2 bg-black/20 text-vintage-orange font-bold text-base md:text-lg">
+                6th November
+              </div>
+              <div className="border-2 border-vintage-teal rounded-lg px-6 py-2 bg-black/20 text-vintage-teal font-bold text-base md:text-lg">
+                Prize Pool: ₹14,000
+              </div>
+            </div>
+
             <p className="text-lg md:text-xl text-vintage-darkBrown mb-4 font-bold">
               Powered by IEEE x GDG
             </p>
-            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-vintage-darkBrown">
               Get ready to ignite your imagination and bring your boldest ideas to life!
               Our Ideathon marks the thrilling start of this collaborative tech fest, where innovation meets impact.
             </p>
@@ -108,9 +131,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Preliminary Round */}
-            <VintageCard color="orange" className="transform hover:scale-105 transition-transform animate-slide-in-up neon-border">
+            <VintageCard color="orange" className="animate-slide-in-up trace-border text-vintage-purple">
               <div className="mb-4 flex justify-center">
-                <BrainIcon className="w-16 h-16 text-vintage-purple" />
+                <BrainIcon className="w-16 h-16 text-vintage-purple animate-icon-dance-1" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4 text-vintage-darkBrown">
                 Preliminary Round
@@ -122,9 +145,9 @@ export default function Home() {
             </VintageCard>
 
             {/* Round 1: Domain Showdown */}
-            <VintageCard color="yellow" className="transform hover:scale-105 transition-transform animate-slide-in-up delay-200 neon-border">
+            <VintageCard color="yellow" className="animate-slide-in-up delay-200 trace-border text-vintage-teal">
               <div className="mb-4 flex justify-center">
-                <GlobeIcon className="w-16 h-16 text-vintage-teal" />
+                <GlobeIcon className="w-16 h-16 text-vintage-teal animate-icon-spin" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4 text-vintage-darkBrown">
                 Round 1: Domain Showdown
@@ -145,9 +168,9 @@ export default function Home() {
             </VintageCard>
 
             {/* Round 2: Grand Finale */}
-            <VintageCard color="purple" className="transform hover:scale-105 transition-transform animate-slide-in-up delay-400 neon-border">
+            <VintageCard color="purple" className="animate-slide-in-up delay-400 trace-border text-vintage-orange">
               <div className="mb-4 flex justify-center">
-                <TrophyIcon className="w-16 h-16 text-vintage-yellow" />
+                <TrophyIcon className="w-16 h-16 text-vintage-yellow animate-icon-dance-2" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4">
                 Round 2: Grand Finale
@@ -188,11 +211,22 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
-              <VinylRecord className="w-24 h-24 md:w-32 md:h-32 animate-float text-vintage-wine" />
+              <VinylRecord className="w-24 h-24 md:w-32 md:h-32 animate-icon-spin text-vintage-wine drop-shadow-2xl" />
             </div>
             <RetroHeading level={1} color="text-vintage-yellow">
               DAY 2: TheCipher
             </RetroHeading>
+
+            {/* Event Date and Prize Pool */}
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <div className="border-2 border-vintage-wine rounded-lg px-6 py-2 bg-black/20 text-vintage-wine font-bold text-base md:text-lg">
+                7th November
+              </div>
+              <div className="border-2 border-vintage-yellow rounded-lg px-6 py-2 bg-black/20 text-vintage-yellow font-bold text-base md:text-lg">
+                Prize Pool: ₹8,000
+              </div>
+            </div>
+
             <p className="text-lg md:text-xl mb-4 font-bold text-vintage-cream">
               A Vintage Quest for the Brilliant Mind
             </p>
@@ -208,9 +242,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Round 1: Switchboard Puzzle */}
-            <VintageCard color="cream" className="transform hover:scale-105 transition-transform animate-slide-in-left neon-border-maroon bg-vintage-cream">
+            <VintageCard color="cream" className="animate-slide-in-left trace-border text-vintage-maroon bg-vintage-cream">
               <div className="mb-4 flex justify-center">
-                <PuzzleIcon className="w-16 h-16 text-vintage-wine" />
+                <PuzzleIcon className="w-16 h-16 text-vintage-wine animate-icon-wobble" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4 text-vintage-darkBrown">
                 Round 1
@@ -226,9 +260,9 @@ export default function Home() {
             </VintageCard>
 
             {/* Round 2: Split Challenge */}
-            <VintageCard color="yellow" className="transform hover:scale-105 transition-transform animate-slide-in-up delay-200 neon-border-maroon">
+            <VintageCard color="yellow" className="animate-slide-in-up delay-200 trace-border text-vintage-wine">
               <div className="mb-4 flex justify-center">
-                <MagnifyIcon className="w-16 h-16 text-vintage-wine" />
+                <MagnifyIcon className="w-16 h-16 text-vintage-wine animate-icon-dance-1" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4 text-vintage-darkBrown">
                 Round 2
@@ -244,9 +278,9 @@ export default function Home() {
             </VintageCard>
 
             {/* Round 3: Final Bid */}
-            <VintageCard color="orange" className="transform hover:scale-105 transition-transform animate-slide-in-right delay-400 neon-border-maroon">
+            <VintageCard color="orange" className="animate-slide-in-right delay-400 trace-border text-vintage-yellow">
               <div className="mb-4 flex justify-center">
-                <CodeIcon className="w-16 h-16 text-vintage-wine" />
+                <CodeIcon className="w-16 h-16 text-vintage-wine animate-icon-dance-2" />
               </div>
               <h3 className="retro-text text-base md:text-lg mb-4 text-vintage-darkBrown">
                 Round 3
@@ -295,51 +329,51 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-4 animate-bounce-in delay-100 group cursor-pointer">
-              <div className="mb-3 flex justify-center group-hover:animate-scale-breath">
-                <StereoIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple drop-shadow-lg" />
+            <div className="text-center p-4 animate-bounce-in delay-100">
+              <div className="mb-3 flex justify-center">
+                <StereoIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple drop-shadow-2xl animate-icon-dance-1" />
               </div>
               <p className="text-sm md:text-base font-bold">Stereos</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-200 group cursor-pointer">
+            <div className="text-center p-4 animate-bounce-in delay-200">
               <div className="mb-3 flex justify-center">
-                <CassetteIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-orange animate-float-3d drop-shadow-lg" />
+                <CassetteIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-orange drop-shadow-2xl animate-icon-spin" />
               </div>
               <p className="text-sm md:text-base font-bold">Cassettes</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-300 group cursor-pointer">
+            <div className="text-center p-4 animate-bounce-in delay-300">
               <div className="mb-3 flex justify-center">
-                <VinylRecord className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown animate-rotate-glow drop-shadow-lg" />
+                <VinylRecord className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown drop-shadow-2xl animate-rotate-glow" />
               </div>
               <p className="text-sm md:text-base font-bold">Vinyl Records</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-400 group cursor-pointer">
-              <div className="mb-3 flex justify-center group-hover:animate-float-3d">
-                <CameraIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-teal drop-shadow-lg" />
+            <div className="text-center p-4 animate-bounce-in delay-400">
+              <div className="mb-3 flex justify-center">
+                <CameraIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-teal drop-shadow-2xl animate-icon-wobble" />
               </div>
               <p className="text-sm md:text-base font-bold">Kodak Cameras</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-500 group cursor-pointer">
-              <div className="mb-3 flex justify-center group-hover:animate-scale-breath">
-                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-pink drop-shadow-lg" />
+            <div className="text-center p-4 animate-bounce-in delay-500">
+              <div className="mb-3 flex justify-center">
+                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-pink drop-shadow-2xl animate-icon-dance-2" />
               </div>
               <p className="text-sm md:text-base font-bold">Walkmans</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-600 group cursor-pointer">
+            <div className="text-center p-4 animate-bounce-in delay-600">
               <div className="mb-3 flex justify-center">
-                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple animate-float-3d drop-shadow-lg" />
+                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple drop-shadow-2xl animate-float-3d" />
               </div>
               <p className="text-sm md:text-base font-bold">Headphones</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-700 group cursor-pointer">
-              <div className="mb-3 flex justify-center group-hover:animate-rotate-glow">
-                <FilmIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-yellow drop-shadow-lg" />
+            <div className="text-center p-4 animate-bounce-in delay-700">
+              <div className="mb-3 flex justify-center">
+                <FilmIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-yellow drop-shadow-2xl animate-scale-breath" />
               </div>
               <p className="text-sm md:text-base font-bold">Film Rolls</p>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-800 group cursor-pointer">
-              <div className="mb-3 flex justify-center group-hover:animate-scale-breath">
-                <VHSIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown drop-shadow-lg" />
+            <div className="text-center p-4 animate-bounce-in delay-800">
+              <div className="mb-3 flex justify-center">
+                <VHSIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown drop-shadow-2xl animate-icon-dance-1" />
               </div>
               <p className="text-sm md:text-base font-bold">VHS Tapes</p>
             </div>
