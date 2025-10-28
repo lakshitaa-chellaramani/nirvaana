@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface RetroHeadingProps {
   children: React.ReactNode;
   level?: 1 | 2 | 3;
@@ -17,11 +19,11 @@ export default function RetroHeading({
     3: 'text-xl md:text-2xl mb-3',
   };
 
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${level}` as 'h1' | 'h2' | 'h3';
 
-  return (
-    <Tag className={`retro-text ${sizes[level]} ${color} ${className}`}>
-      {children}
-    </Tag>
+  return React.createElement(
+    Tag,
+    { className: `retro-text ${sizes[level]} ${color} ${className}` },
+    children
   );
 }
