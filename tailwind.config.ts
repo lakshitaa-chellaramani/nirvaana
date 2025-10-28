@@ -18,6 +18,10 @@ const config: Config = {
           teal: '#06AED5',
           purple: '#7B2CBF',
           pink: '#FF006E',
+          maroon: '#6B1E3C',
+          burgundy: '#4A1428',
+          darkMaroon: '#2D0B1A',
+          wine: '#8B2F47',
         },
       },
       fontFamily: {

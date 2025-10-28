@@ -1,7 +1,7 @@
 interface VintageCardProps {
   children: React.ReactNode;
   className?: string;
-  color?: 'orange' | 'teal' | 'purple' | 'pink' | 'yellow';
+  color?: 'orange' | 'teal' | 'purple' | 'pink' | 'yellow' | 'cream';
 }
 
 export default function VintageCard({ children, className = '', color = 'orange' }: VintageCardProps) {
@@ -11,6 +11,7 @@ export default function VintageCard({ children, className = '', color = 'orange'
     purple: 'bg-vintage-purple border-vintage-darkBrown text-white',
     pink: 'bg-vintage-pink border-vintage-darkBrown text-white',
     yellow: 'bg-vintage-yellow border-vintage-brown',
+    cream: 'bg-vintage-cream border-vintage-maroon',
   };
 
   return (
