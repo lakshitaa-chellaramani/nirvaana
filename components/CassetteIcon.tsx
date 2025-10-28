@@ -1,6 +1,6 @@
-export default function CassetteIcon({ className = '' }: { className?: string }) {
+export default function CassetteIcon({ className = '', style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <div className={`inline-block ${className}`}>
+    <div className={`inline-block ${className}`} style={style}>
       <svg viewBox="0 0 100 70" className="w-full h-full" fill="currentColor">
         <rect x="5" y="10" width="90" height="50" rx="3" fill="#8B4513" />
         <rect x="10" y="15" width="80" height="40" rx="2" fill="#F5E6D3" />

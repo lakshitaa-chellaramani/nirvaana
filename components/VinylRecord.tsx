@@ -1,6 +1,6 @@
-export default function VinylRecord({ className = '' }: { className?: string }) {
+export default function VinylRecord({ className = '', style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <div className={`inline-block ${className}`}>
+    <div className={`inline-block ${className}`} style={style}>
       <svg viewBox="0 0 100 100" className="w-full h-full animate-rotate" fill="currentColor">
         <circle cx="50" cy="50" r="45" fill="#1a1a1a" />
         <circle cx="50" cy="50" r="40" fill="none" stroke="#333" strokeWidth="0.5" />
