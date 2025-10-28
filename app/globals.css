@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-vintage-cream text-vintage-darkBrown;
     font-family: 'Courier New', monospace;
