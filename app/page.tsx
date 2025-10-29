@@ -187,7 +187,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-vintage-brown font-bold">
               Step up, think big, and let your ideas shape the future.
             </p>
-            <p className="retro-text text-sm md:text-base text-vintage-purple mt-4">
+            <p className="text-xl md:text-2xl text-vintage-purple mt-4 font-bold" style={{ textShadow: 'none' }}>
               Are you ready to innovate?
             </p>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
                 7th November
               </div>
               <div className="border-2 border-vintage-yellow rounded-lg px-6 py-2 bg-black/20 text-vintage-yellow font-bold text-base md:text-lg">
-                Prize Pool: ₹8,000
+                Prize Pool: ₹9,500
               </div>
             </div>
 
@@ -314,68 +314,79 @@ export default function Home() {
       </section>
 
       {/* Theme Elements Section */}
-      <section className="py-20 bg-vintage-cream relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-vintage-darkBrown to-vintage-brown text-vintage-cream relative overflow-hidden">
         <div className="absolute inset-0 retro-grid opacity-10"></div>
         <div className="absolute inset-0 tech-dots opacity-5"></div>
+        <div className="absolute inset-0 vhs-effect"></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <RetroHeading level={2} color="text-vintage-brown">
-              THEME ELEMENTS
+          <div className="text-center mb-16">
+            <RetroHeading level={2} color="text-vintage-yellow">
+              VINTAGE TECH AESTHETIC
             </RetroHeading>
-            <p className="text-lg md:text-xl text-vintage-darkBrown font-bold">
-              Experience the Authentic 90s Vibe
+            <p className="text-lg md:text-xl text-vintage-cream font-bold mt-4">
+              Immerse yourself in the golden era of analog technology
+            </p>
+            <p className="text-base md:text-lg text-vintage-cream/80 mt-2 max-w-3xl mx-auto">
+              Step back into the 1990s with authentic retro equipment, classic designs, and nostalgic vibes
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-4 animate-bounce-in delay-100">
-              <div className="mb-3 flex justify-center">
-                <StereoIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple drop-shadow-2xl animate-icon-dance-1" />
+          <div className="max-w-5xl mx-auto">
+            {/* Main showcase - Horizontal list */}
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="border-2 border-vintage-orange p-6 bg-black/30 backdrop-blur-sm animate-fade-in hover:border-vintage-yellow transition-colors duration-300">
+                <div className="flex items-center gap-4">
+                  <VinylRecord className="w-16 h-16 text-vintage-orange animate-rotate-glow" />
+                  <div>
+                    <h3 className="text-xl font-bold text-vintage-yellow retro-text">VINYL</h3>
+                    <p className="text-sm text-vintage-cream/80">Classic Records</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-sm md:text-base font-bold">Stereos</p>
+
+              <div className="border-2 border-vintage-teal p-6 bg-black/30 backdrop-blur-sm animate-fade-in delay-100 hover:border-vintage-yellow transition-colors duration-300">
+                <div className="flex items-center gap-4">
+                  <CassetteIcon className="w-16 h-16 text-vintage-teal animate-float-3d" />
+                  <div>
+                    <h3 className="text-xl font-bold text-vintage-yellow retro-text">CASSETTES</h3>
+                    <p className="text-sm text-vintage-cream/80">Mixtape Era</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-2 border-vintage-purple p-6 bg-black/30 backdrop-blur-sm animate-fade-in delay-200 hover:border-vintage-yellow transition-colors duration-300">
+                <div className="flex items-center gap-4">
+                  <VHSIcon className="w-16 h-16 text-vintage-purple animate-icon-wobble" />
+                  <div>
+                    <h3 className="text-xl font-bold text-vintage-yellow retro-text">VHS</h3>
+                    <p className="text-sm text-vintage-cream/80">Video Tapes</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="text-center p-4 animate-bounce-in delay-200">
-              <div className="mb-3 flex justify-center">
-                <CassetteIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-orange drop-shadow-2xl animate-icon-spin" />
+
+            {/* Secondary items - Compact list */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="border border-vintage-orange/50 p-4 bg-black/20 backdrop-blur-sm text-center animate-fade-in delay-300 hover:border-vintage-orange transition-colors duration-300">
+                <CameraIcon className="w-12 h-12 mx-auto mb-2 text-vintage-orange" />
+                <p className="text-sm font-bold text-vintage-cream">Kodak Cameras</p>
               </div>
-              <p className="text-sm md:text-base font-bold">Cassettes</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-300">
-              <div className="mb-3 flex justify-center">
-                <VinylRecord className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown drop-shadow-2xl animate-rotate-glow" />
+
+              <div className="border border-vintage-teal/50 p-4 bg-black/20 backdrop-blur-sm text-center animate-fade-in delay-400 hover:border-vintage-teal transition-colors duration-300">
+                <StereoIcon className="w-12 h-12 mx-auto mb-2 text-vintage-teal" />
+                <p className="text-sm font-bold text-vintage-cream">Boomboxes</p>
               </div>
-              <p className="text-sm md:text-base font-bold">Vinyl Records</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-400">
-              <div className="mb-3 flex justify-center">
-                <CameraIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-teal drop-shadow-2xl animate-icon-wobble" />
+
+              <div className="border border-vintage-pink/50 p-4 bg-black/20 backdrop-blur-sm text-center animate-fade-in delay-500 hover:border-vintage-pink transition-colors duration-300">
+                <HeadphoneIcon className="w-12 h-12 mx-auto mb-2 text-vintage-pink" />
+                <p className="text-sm font-bold text-vintage-cream">Walkmans</p>
               </div>
-              <p className="text-sm md:text-base font-bold">Kodak Cameras</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-500">
-              <div className="mb-3 flex justify-center">
-                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-pink drop-shadow-2xl animate-icon-dance-2" />
+
+              <div className="border border-vintage-yellow/50 p-4 bg-black/20 backdrop-blur-sm text-center animate-fade-in delay-600 hover:border-vintage-yellow transition-colors duration-300">
+                <FilmIcon className="w-12 h-12 mx-auto mb-2 text-vintage-yellow" />
+                <p className="text-sm font-bold text-vintage-cream">Film Rolls</p>
               </div>
-              <p className="text-sm md:text-base font-bold">Walkmans</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-600">
-              <div className="mb-3 flex justify-center">
-                <HeadphoneIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-purple drop-shadow-2xl animate-float-3d" />
-              </div>
-              <p className="text-sm md:text-base font-bold">Headphones</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-700">
-              <div className="mb-3 flex justify-center">
-                <FilmIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-yellow drop-shadow-2xl animate-scale-breath" />
-              </div>
-              <p className="text-sm md:text-base font-bold">Film Rolls</p>
-            </div>
-            <div className="text-center p-4 animate-bounce-in delay-800">
-              <div className="mb-3 flex justify-center">
-                <VHSIcon className="w-16 h-16 md:w-20 md:h-20 text-vintage-brown drop-shadow-2xl animate-icon-dance-1" />
-              </div>
-              <p className="text-sm md:text-base font-bold">VHS Tapes</p>
             </div>
           </div>
         </div>
