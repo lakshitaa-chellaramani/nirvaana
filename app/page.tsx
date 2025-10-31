@@ -83,6 +83,22 @@ export default function Home() {
               </VintageCard>
             </div>
 
+            {/* Register Button */}
+            <div className="animate-hidden animate-bounce-in delay-1500 mb-8">
+              <a
+                href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-vintage-orange border-4 border-vintage-darkBrown text-vintage-darkBrown font-bold text-lg md:text-xl retro-text hover:bg-vintage-yellow hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
+                style={{
+                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)',
+                  textDecoration: 'none'
+                }}
+              >
+                REGISTER HERE
+              </a>
+            </div>
+
             {/* Scroll indicator - Bounces in last */}
             <div className="animate-hidden animate-bounce-in delay-1500">
               <div className="text-vintage-darkBrown text-3xl animate-bounce inline-block">↓</div>
@@ -190,6 +206,22 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-vintage-purple mt-4 font-bold" style={{ textShadow: 'none' }}>
               Are you ready to innovate?
             </p>
+
+            {/* Register Button for Ideathon */}
+            <div className="mt-8">
+              <a
+                href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-vintage-teal border-4 border-vintage-purple text-vintage-cream font-bold text-lg md:text-xl retro-text hover:bg-vintage-purple hover:text-vintage-teal hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
+                style={{
+                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)',
+                  textDecoration: 'none'
+                }}
+              >
+                REGISTER NOW
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -309,6 +341,22 @@ export default function Home() {
             <p className="retro-text text-sm md:text-base text-vintage-yellow mt-4">
               Can you break TheCipher before time runs out?
             </p>
+
+            {/* Register Button for TheCipher */}
+            <div className="mt-8">
+              <a
+                href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-vintage-wine border-4 border-vintage-yellow text-vintage-cream font-bold text-lg md:text-xl retro-text hover:bg-vintage-yellow hover:text-vintage-maroon hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
+                style={{
+                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)',
+                  textDecoration: 'none'
+                }}
+              >
+                REGISTER NOW
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -387,6 +435,198 @@ export default function Home() {
                 <FilmIcon className="w-12 h-12 mx-auto mb-2 text-vintage-yellow" />
                 <p className="text-sm font-bold text-vintage-cream">Film Rolls</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-vintage-cream text-vintage-darkBrown relative overflow-hidden">
+        <div className="absolute inset-0 retro-grid opacity-5"></div>
+        <div className="absolute inset-0 tech-dots opacity-10"></div>
+        <div className="absolute inset-0 scanlines opacity-5"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <RetroHeading level={2} color="text-vintage-purple">
+              FREQUENTLY ASKED QUESTIONS
+            </RetroHeading>
+            <p className="text-lg md:text-xl text-vintage-brown font-bold mt-4">
+              Got questions? We've got answers!
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {/* Ideathon FAQs */}
+            <div className="mb-12">
+              <h3 className="retro-text text-xl md:text-2xl text-vintage-teal mb-8 text-center border-b-4 border-vintage-teal pb-4">
+                DAY 1: IDEATHON
+              </h3>
+
+              <div className="space-y-6">
+                {/* FAQ 1 */}
+                <VintageCard color="orange" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: What is the team size for the Ideathon?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Teams can consist of <strong>2-4 members</strong>. You can register as an individual and we'll help you find teammates, or come with your pre-formed team.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 2 */}
+                <VintageCard color="yellow" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: What should we submit in the Preliminary Round?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Submit a <strong>PowerPoint presentation (PPT)</strong> that clearly explains your idea, its innovation, feasibility, and potential impact. The best 50 teams will be shortlisted for Round 1.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 3 */}
+                <VintageCard color="purple" className="trace-border text-vintage-cream">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-yellow mb-3">
+                    Q: Which domains are available for Round 1?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    The 50 shortlisted teams will be divided across <strong>5 domains</strong>: AI/ML, Software, Blockchain, Hardware, and IoT. Each domain will have 10 teams competing.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 4 */}
+                <VintageCard color="teal" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: How will teams be evaluated?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Teams will be evaluated on <strong>innovation, feasibility, impact, and presentation quality</strong>. Expert judges will assess your idea based on creativity, technical soundness, and real-world application potential.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 5 */}
+                <VintageCard color="pink" className="trace-border text-vintage-darkBrown">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: Will there be mentorship or guidance during the event?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Yes! Industry experts and mentors will be available during the offline rounds to provide guidance, answer questions, and help refine your ideas.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 6 */}
+                <VintageCard color="orange" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: How many teams make it to the Grand Finale?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    From all 5 domains, the <strong>Top 10 teams</strong> will advance to Round 2 (Grand Finale), where they'll compete for the top 3 positions.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 7 */}
+                <VintageCard color="yellow" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-purple mb-3">
+                    Q: Is there a registration fee?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Please check the official registration page for the latest information on fees and registration details.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 8 */}
+                <VintageCard color="purple" className="trace-border text-vintage-cream">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-yellow mb-3">
+                    Q: What is the prize pool for the Ideathon?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    The total prize pool for Day 1 Ideathon is <strong>₹14,000</strong>, which will be distributed among the top 3 winning teams!
+                  </p>
+                </VintageCard>
+              </div>
+            </div>
+
+            {/* TheCipher FAQs */}
+            <div className="mb-12">
+              <h3 className="retro-text text-xl md:text-2xl text-vintage-wine mb-8 text-center border-b-4 border-vintage-wine pb-4">
+                DAY 2: TheCipher
+              </h3>
+
+              <div className="space-y-6">
+                {/* FAQ 1 */}
+                <VintageCard color="cream" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-maroon mb-3">
+                    Q: What is the team composition for TheCipher?
+                  </h4>
+                  <p className="text-base leading-relaxed text-vintage-darkBrown">
+                    Each team must have <strong>exactly 3 members</strong>. Up to 50 teams will participate in Round 1, with only the sharpest minds advancing through each round.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 2 */}
+                <VintageCard color="yellow" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-maroon mb-3">
+                    Q: Are programming skills required for TheCipher?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Programming skills are <strong>required for Round 3</strong> (The Final Bid), where you'll face coding challenges. However, Rounds 1 and 2 focus on logic, puzzles, and problem-solving skills.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 3 */}
+                <VintageCard color="orange" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-maroon mb-3">
+                    Q: Will internet access be provided during the event?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    Internet access rules will be specified for each round. Round 3 may have specific guidelines regarding internet usage during coding challenges.
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 4 */}
+                <VintageCard color="teal" className="trace-border">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-maroon mb-3">
+                    Q: How does the bidding system work in Round 3?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    In the Final Bid, teams will <strong>bid for coding questions</strong> they want to attempt. Strategic bidding is crucial - choose questions wisely based on your team's strengths and the points at stake!
+                  </p>
+                </VintageCard>
+
+                {/* FAQ 5 */}
+                <VintageCard color="pink" className="trace-border text-vintage-darkBrown">
+                  <h4 className="font-bold text-lg md:text-xl text-vintage-maroon mb-3">
+                    Q: What is the prize pool for TheCipher?
+                  </h4>
+                  <p className="text-base leading-relaxed">
+                    The total prize pool for Day 2 TheCipher is <strong>₹9,500</strong>, which will be awarded to the top 3 teams who successfully decode all challenges!
+                  </p>
+                </VintageCard>
+              </div>
+            </div>
+
+            {/* Contact/More Info */}
+            <div className="text-center mt-16">
+              <VintageCard color="purple" className="text-vintage-cream">
+                <h4 className="retro-text text-lg md:text-xl text-vintage-yellow mb-4">
+                  Still have questions?
+                </h4>
+                <p className="text-base mb-6">
+                  For more information, please check the official registration page or contact the organizing team.
+                </p>
+                <a
+                  href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-3 bg-vintage-yellow border-4 border-vintage-cream text-vintage-purple font-bold text-base md:text-lg retro-text hover:bg-vintage-cream hover:text-vintage-purple hover:scale-110 transition-all duration-300"
+                  style={{
+                    boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+                    textDecoration: 'none'
+                  }}
+                >
+                  VISIT REGISTRATION PAGE
+                </a>
+              </VintageCard>
             </div>
           </div>
         </div>
