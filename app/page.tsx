@@ -24,7 +24,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Darker base background with gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-500 via-purple-500/60 to-gray-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-800/90 to-black"></div>
         {/* Retro Tech Background Layers */}
         <div className="absolute inset-0 retro-grid opacity-40"></div>
         <div className="absolute inset-0 tech-dots opacity-30"></div>
