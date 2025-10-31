@@ -53,9 +53,9 @@ export default function Home() {
         <div className="container mx-auto px-4 z-10 max-w-full">
           <div className="text-center">
             {/* Main Vinyl Record - Dramatic entrance - Reduced size */}
-            <div className="mb-8 flex justify-center animate-hidden animate-scale-rotate-in">
+            {/* <div className="mb-8 flex justify-center animate-hidden animate-scale-rotate-in">
               <VinylRecord className="w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl" />
-            </div>
+            </div> */}
 
             {/* Organizer Logos - Above Title - Increased size */}
             <div className="flex justify-center items-center gap-6 md:gap-10 mb-6 animate-hidden animate-fade-in delay-200">
