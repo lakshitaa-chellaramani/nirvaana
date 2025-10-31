@@ -23,85 +23,118 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Darker base background with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-500 via-purple-500/60 to-gray-500"></div>
         {/* Retro Tech Background Layers */}
-        <div className="absolute inset-0 retro-grid"></div>
-        <div className="absolute inset-0 tech-dots opacity-50"></div>
-        <div className="absolute inset-0 scanlines"></div>
+        <div className="absolute inset-0 retro-grid opacity-40"></div>
+        <div className="absolute inset-0 tech-dots opacity-30"></div>
+        <div className="absolute inset-0 scanlines opacity-60"></div>
         <div className="absolute inset-0 vhs-effect"></div>
+        {/* Additional dark overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40"></div>
 
-        {/* Floating vintage elements - positioned safely within viewport */}
+        {/* Floating vintage elements - positioned safely within viewport - Made lighter for contrast */}
         {/* Top row */}
-        <VinylRecord className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-24 md:h-24 opacity-15 hidden sm:block animate-float-slow text-vintage-purple" style={{ animationDelay: '0.5s' }} />
-        <CameraIcon className="absolute top-16 left-1/4 w-16 h-16 md:w-20 md:h-20 opacity-10 hidden lg:block animate-float-slow text-vintage-orange" style={{ animationDelay: '1.2s' }} />
-        <StereoIcon className="absolute top-24 right-1/4 w-20 h-20 md:w-24 md:h-24 opacity-12 hidden lg:block animate-float-slow text-vintage-teal" style={{ animationDelay: '2.5s' }} />
-        <CassetteIcon className="absolute top-40 right-4 md:right-20 w-24 h-24 md:w-32 md:h-32 opacity-12 animate-float-slow hidden sm:block text-vintage-teal" style={{ animationDelay: '1s' }} />
+        <VinylRecord className="absolute top-20 left-4 md:left-10 w-16 h-16 md:w-24 md:h-24 opacity-40 hidden sm:block animate-float-slow text-yellow-300" style={{ animationDelay: '0.5s' }} />
+        <CameraIcon className="absolute top-16 left-1/4 w-16 h-16 md:w-20 md:h-20 opacity-35 hidden lg:block animate-float-slow text-orange-300" style={{ animationDelay: '1.2s' }} />
+        <StereoIcon className="absolute top-24 right-1/4 w-20 h-20 md:w-24 md:h-24 opacity-35 hidden lg:block animate-float-slow text-teal-300" style={{ animationDelay: '2.5s' }} />
+        <CassetteIcon className="absolute top-40 right-4 md:right-20 w-24 h-24 md:w-32 md:h-32 opacity-40 animate-float-slow hidden sm:block text-pink-300" style={{ animationDelay: '1s' }} />
 
         {/* Middle row */}
-        <HeadphoneIcon className="absolute top-1/3 left-8 w-14 h-14 md:w-18 md:h-18 opacity-8 hidden md:block animate-float-slow text-vintage-pink" style={{ animationDelay: '3s' }} />
-        <FilmIcon className="absolute top-1/3 right-8 w-14 h-14 md:w-18 md:h-18 opacity-8 hidden md:block animate-float-slow text-vintage-yellow" style={{ animationDelay: '3.5s' }} />
+        <HeadphoneIcon className="absolute top-1/3 left-8 w-14 h-14 md:w-18 md:h-18 opacity-30 hidden md:block animate-float-slow text-purple-300" style={{ animationDelay: '3s' }} />
+        <FilmIcon className="absolute top-1/3 right-8 w-14 h-14 md:w-18 md:h-18 opacity-30 hidden md:block animate-float-slow text-amber-300" style={{ animationDelay: '3.5s' }} />
 
         {/* Bottom row */}
-        <VHSIcon className="absolute bottom-40 left-12 md:left-24 w-18 h-18 md:w-22 md:h-22 opacity-10 hidden md:block animate-float-slow text-vintage-brown" style={{ animationDelay: '4s' }} />
-        <VinylRecord className="absolute bottom-32 right-8 md:right-32 w-16 h-16 md:w-20 md:h-20 opacity-12 hidden sm:block animate-float-slow text-vintage-orange" style={{ animationDelay: '1.5s' }} />
-        <CassetteIcon className="absolute bottom-20 left-8 md:left-32 w-20 h-20 md:w-28 md:h-28 opacity-10 animate-float-slow hidden sm:block text-vintage-pink" style={{ animationDelay: '2s' }} />
-        <CameraIcon className="absolute bottom-16 right-1/4 w-16 h-16 md:w-20 md:h-20 opacity-8 hidden lg:block animate-float-slow text-vintage-purple" style={{ animationDelay: '4.5s' }} />
+        <VHSIcon className="absolute bottom-40 left-12 md:left-24 w-18 h-18 md:w-22 md:h-22 opacity-35 hidden md:block animate-float-slow text-orange-200" style={{ animationDelay: '4s' }} />
+        <VinylRecord className="absolute bottom-32 right-8 md:right-32 w-16 h-16 md:w-20 md:h-20 opacity-40 hidden sm:block animate-float-slow text-rose-300" style={{ animationDelay: '1.5s' }} />
+        <CassetteIcon className="absolute bottom-20 left-8 md:left-32 w-20 h-20 md:w-28 md:h-28 opacity-35 animate-float-slow hidden sm:block text-cyan-300" style={{ animationDelay: '2s' }} />
+        <CameraIcon className="absolute bottom-16 right-1/4 w-16 h-16 md:w-20 md:h-20 opacity-30 hidden lg:block animate-float-slow text-violet-300" style={{ animationDelay: '4.5s' }} />
 
         <div className="container mx-auto px-4 z-10 max-w-full">
           <div className="text-center">
-            {/* Main Vinyl Record - Dramatic entrance */}
+            {/* Main Vinyl Record - Dramatic entrance - Reduced size */}
             <div className="mb-8 flex justify-center animate-hidden animate-scale-rotate-in">
-              <VinylRecord className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl" />
+              <VinylRecord className="w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl" />
+            </div>
+
+            {/* Organizer Logos - Above Title - Increased size */}
+            <div className="flex justify-center items-center gap-6 md:gap-10 mb-6 animate-hidden animate-fade-in delay-200">
+              <img
+                src="/7.png"
+                alt="IEEE"
+                className="h-24 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300"
+                style={{ filter: 'drop-shadow(0 0 25px rgba(255, 255, 255, 0.6))' }}
+              />
+              <div className="text-vintage-orange text-2xl md:text-4xl font-bold" style={{ textShadow: '0 0 10px rgba(255, 140, 66, 0.8)' }}>
+                ×
+              </div>
+              <img
+                src="/8.png"
+                alt="GDG"
+                className="h-24 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300"
+                style={{ filter: 'drop-shadow(0 0 25px rgba(72, 187, 120, 0.6))' }}
+              />
             </div>
 
             {/* Title - Slides down with glow */}
-            <h1 className="retro-text text-4xl md:text-7xl text-vintage-purple mb-4 animate-hidden animate-slide-in-down delay-400" style={{ textShadow: '0 0 30px rgba(123, 44, 191, 0.6)' }}>
+            <h1 className="retro-text text-4xl md:text-7xl text-yellow-300 mb-4 animate-hidden animate-slide-in-down delay-400" style={{ textShadow: '0 0 40px rgba(253, 224, 71, 0.8), 0 0 60px rgba(253, 224, 71, 0.6), 4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
               NIRVAANA
             </h1>
 
             {/* Subtitle - Glowing pulse effect */}
-            <div className="retro-text text-xl md:text-3xl text-vintage-orange mb-6 animate-hidden animate-glow-pulse delay-700" style={{
-              textShadow: '0 0 20px rgba(255, 140, 66, 0.8), 0 0 40px rgba(255, 140, 66, 0.6), 0 0 60px rgba(255, 140, 66, 0.4)'
+            <div className="retro-text text-xl md:text-3xl text-orange-400 mb-6 animate-hidden animate-glow-pulse delay-700" style={{
+              textShadow: '0 0 20px rgba(251, 146, 60, 0.8), 0 0 40px rgba(251, 146, 60, 0.6), 0 0 60px rgba(251, 146, 60, 0.4)'
             }}>
               BACK TO THE 90s
             </div>
 
             {/* Presenter text - Pops in */}
-            <p className="text-lg md:text-2xl text-vintage-brown font-bold mb-8 max-w-2xl mx-auto animate-hidden animate-pop-in delay-1000">
+            <p className="text-lg md:text-2xl text-gray-200 font-bold mb-8 max-w-2xl mx-auto animate-hidden animate-pop-in delay-1000" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
               DJS IEEE X GDG DJSCE PRESENTS
             </p>
 
             {/* Event Cards - Slide in from sides with stagger */}
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
-              <VintageCard color="teal" className="text-center animate-hidden animate-slide-in-left delay-1200 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <VintageCard color="teal" className="text-center animate-hidden animate-slide-in-left delay-1200 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                 <div className="retro-text text-sm md:text-base">DAY 1</div>
-                <div className="text-xl md:text-2xl font-bold mt-2">IDEATHON</div>
+                <div className="text-xl md:text-2xl font-bold mt-2 mb-4">IDEATHON</div>
+                <a
+                  href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 bg-vintage-purple border-2 border-vintage-darkBrown text-vintage-cream text-sm font-bold retro-text hover:bg-vintage-darkBrown hover:scale-110 transition-all duration-300"
+                  style={{
+                    boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+                    textDecoration: 'none'
+                  }}
+                >
+                  REGISTER
+                </a>
               </VintageCard>
 
-              <VintageCard color="pink" className="text-center animate-hidden animate-slide-in-right delay-1200 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <VintageCard color="pink" className="text-center animate-hidden animate-slide-in-right delay-1200 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                 <div className="retro-text text-sm md:text-base">DAY 2</div>
-                <div className="text-xl md:text-2xl font-bold mt-2">TheCipher</div>
+                <div className="text-xl md:text-2xl font-bold mt-2 mb-4">TheCipher</div>
+                <a
+                  href="https://forms.gle/XchTzJU3AKgJD1Fs8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 bg-vintage-maroon border-2 border-vintage-darkBrown text-vintage-cream text-sm font-bold retro-text hover:bg-vintage-darkBrown hover:scale-110 transition-all duration-300"
+                  style={{
+                    boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+                    textDecoration: 'none'
+                  }}
+                >
+                  REGISTER
+                </a>
               </VintageCard>
             </div>
 
-            {/* Register Button */}
-            <div className="animate-hidden animate-bounce-in delay-1500 mb-8">
-              <a
-                href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 bg-vintage-orange border-4 border-vintage-darkBrown text-vintage-darkBrown font-bold text-lg md:text-xl retro-text hover:bg-vintage-yellow hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
-                style={{
-                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)',
-                  textDecoration: 'none'
-                }}
-              >
-                REGISTER HERE
-              </a>
-            </div>
+        
 
             {/* Scroll indicator - Bounces in last */}
             <div className="animate-hidden animate-bounce-in delay-1500">
-              <div className="text-vintage-darkBrown text-3xl animate-bounce inline-block">↓</div>
+              <div className="text-yellow-300 text-3xl animate-bounce inline-block" style={{ textShadow: '0 0 20px rgba(253, 224, 71, 0.6)' }}>↓</div>
             </div>
           </div>
         </div>
@@ -255,7 +288,7 @@ export default function Home() {
                 7th November
               </div>
               <div className="border-2 border-vintage-yellow rounded-lg px-6 py-2 bg-black/20 text-vintage-yellow font-bold text-base md:text-lg">
-                Prize Pool: ₹9,500
+                Prize Pool: ₹8,000
               </div>
             </div>
 
@@ -345,7 +378,7 @@ export default function Home() {
             {/* Register Button for TheCipher */}
             <div className="mt-8">
               <a
-                href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                href="https://forms.gle/XchTzJU3AKgJD1Fs8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 bg-vintage-wine border-4 border-vintage-yellow text-vintage-cream font-bold text-lg md:text-xl retro-text hover:bg-vintage-yellow hover:text-vintage-maroon hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
@@ -470,7 +503,7 @@ export default function Home() {
                     Q: What is the team size for the Ideathon?
                   </h4>
                   <p className="text-base leading-relaxed">
-                    Teams can consist of <strong>2-4 members</strong>. You can register as an individual and we'll help you find teammates, or come with your pre-formed team.
+                    Teams can consist of <strong>2-3 members</strong>. You can register as an individual and we'll help you find teammates, or come with your pre-formed team.
                   </p>
                 </VintageCard>
 
@@ -605,27 +638,49 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Contact/More Info */}
+            {/* Contact Info */}
             <div className="text-center mt-16">
               <VintageCard color="purple" className="text-vintage-cream">
-                <h4 className="retro-text text-lg md:text-xl text-vintage-yellow mb-4">
+                <h4 className="retro-text text-lg md:text-xl text-vintage-yellow mb-6">
                   Still have questions?
                 </h4>
-                <p className="text-base mb-6">
-                  For more information, please check the official registration page or contact the organizing team.
+                <p className="text-base mb-6 font-bold">
+                  Contact the organizing team:
                 </p>
-                <a
-                  href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-8 py-3 bg-vintage-yellow border-4 border-vintage-cream text-vintage-purple font-bold text-base md:text-lg retro-text hover:bg-vintage-cream hover:text-vintage-purple hover:scale-110 transition-all duration-300"
-                  style={{
-                    boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-                    textDecoration: 'none'
-                  }}
-                >
-                  VISIT REGISTRATION PAGE
-                </a>
+                <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12">
+                  {/* Contact 1 */}
+                  <div className="text-center">
+                    <p className="font-bold text-lg md:text-xl text-vintage-yellow mb-2">
+                      Kisna Shah
+                    </p>
+                    <a
+                      href="tel:+919321740972"
+                      className="text-base md:text-lg text-vintage-cream hover:text-vintage-yellow transition-colors duration-300 font-bold"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      +91 93217 40972
+                    </a>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="hidden md:block text-vintage-yellow text-2xl font-bold">
+                    |
+                  </div>
+
+                  {/* Contact 2 */}
+                  <div className="text-center">
+                    <p className="font-bold text-lg md:text-xl text-vintage-yellow mb-2">
+                      Chintan Dodia
+                    </p>
+                    <a
+                      href="tel:+917400332342"
+                      className="text-base md:text-lg text-vintage-cream hover:text-vintage-yellow transition-colors duration-300 font-bold"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      +91 74003 32342
+                    </a>
+                  </div>
+                </div>
               </VintageCard>
             </div>
           </div>
@@ -639,6 +694,25 @@ export default function Home() {
             <RetroHeading level={2} color="text-vintage-orange">
               NIRVAANA
             </RetroHeading>
+
+            {/* Organizer Logos */}
+            <div className="flex justify-center items-center gap-8 my-8">
+              <img
+                src="/7.png"
+                alt="IEEE"
+                className="h-16 md:h-20 w-auto object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300"
+                style={{ filter: 'drop-shadow(0 0 15px rgba(255, 140, 66, 0.4))' }}
+              />
+              <div className="text-vintage-orange text-2xl md:text-3xl font-bold">
+                ×
+              </div>
+              <img
+                src="/8.png"
+                alt="GDG"
+                className="h-16 md:h-20 w-auto object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300"
+                style={{ filter: 'drop-shadow(0 0 15px rgba(72, 187, 120, 0.4))' }}
+              />
+            </div>
 
             <div className="flex flex-wrap justify-center gap-8 my-8">
               <div>
