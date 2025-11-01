@@ -172,10 +172,30 @@ export default function Home() {
             <p className="text-lg md:text-xl text-vintage-darkBrown mb-4 font-bold">
               Powered by IEEE x GDG
             </p>
-            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-vintage-darkBrown">
+            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-vintage-darkBrown mb-3">
               Get ready to ignite your imagination and bring your boldest ideas to life!
               Our Ideathon marks the thrilling start of this collaborative tech fest, where innovation meets impact.
             </p>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <GlobeIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-purple" />
+              <p className="text-lg md:text-xl text-vintage-purple font-bold" style={{ textShadow: '2px 2px 4px rgba(123, 44, 191, 0.3)' }}>
+                Open to all students
+              </p>
+              <GlobeIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-purple" />
+            </div>
+
+            {/* Animated Problem Statement Banner */}
+            <div className="mb-8 mx-auto max-w-4xl">
+              <div className="bg-gradient-to-r from-vintage-orange via-vintage-yellow to-vintage-orange border-4 border-vintage-darkBrown p-4 md:p-6 animate-glow-pulse" style={{ boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)' }}>
+                <div className="flex items-center justify-center gap-3 flex-wrap">
+                  <BrainIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-darkBrown" />
+                  <p className="retro-text text-sm md:text-lg text-vintage-darkBrown text-center font-bold">
+                    PROBLEM STATEMENTS RELEASE: 3RD NOVEMBER
+                  </p>
+                  <BrainIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-darkBrown" />
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -288,7 +308,7 @@ export default function Home() {
                 7th November
               </div>
               <div className="border-2 border-vintage-yellow rounded-lg px-6 py-2 bg-black/20 text-vintage-yellow font-bold text-base md:text-lg">
-                Prize Pool: ₹8,000
+                Prize Pool: ₹9,500
               </div>
             </div>
 
@@ -299,10 +319,17 @@ export default function Home() {
               Step back in time to the golden age of mystery and intellect — where every clue hides a secret,
               every puzzle a story, and only the sharpest minds prevail.
             </p>
-            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed mt-4">
+            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed mt-4 mb-3">
               Welcome to <strong>TheCipher</strong>, a thrilling vintage-inspired decoding adventure
               that will challenge your logic, wit, and teamwork through three captivating rounds of brain-twisting brilliance.
             </p>
+            <div className="flex items-center justify-center gap-3">
+              <TrophyIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-yellow" />
+              <p className="text-lg md:text-xl text-vintage-yellow font-bold" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+                For DJSCE Students Only
+              </p>
+              <TrophyIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-yellow" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
