@@ -187,12 +187,24 @@ export default function Home() {
             {/* Animated Problem Statement Banner */}
             <div className="mb-8 mx-auto max-w-4xl">
               <div className="bg-gradient-to-r from-vintage-orange via-vintage-yellow to-vintage-orange border-4 border-vintage-darkBrown p-4 md:p-6 animate-glow-pulse" style={{ boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)' }}>
-                <div className="flex items-center justify-center gap-3 flex-wrap">
+                <div className="flex items-center justify-center gap-3 flex-wrap mb-4">
                   <BrainIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-darkBrown" />
                   <p className="retro-text text-sm md:text-lg text-vintage-darkBrown text-center font-bold">
-                    PROBLEM STATEMENTS RELEASE: 3RD NOVEMBER
+                    PROBLEM STATEMENTS NOW AVAILABLE
                   </p>
                   <BrainIcon className="w-6 h-6 md:w-8 md:h-8 text-vintage-darkBrown" />
+                </div>
+                <div className="text-center">
+                  <a
+                    href="/problem-statements"
+                    className="inline-block px-6 py-3 bg-vintage-purple border-3 border-vintage-darkBrown text-vintage-cream font-bold text-sm md:text-base retro-text hover:bg-vintage-darkBrown hover:scale-110 transition-all duration-300"
+                    style={{
+                      boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    VIEW PROBLEM STATEMENTS
+                  </a>
                 </div>
               </div>
             </div>
@@ -260,8 +272,18 @@ export default function Home() {
               Are you ready to innovate?
             </p>
 
-            {/* Register Button for Ideathon */}
-            <div className="mt-8">
+            {/* Buttons Row */}
+            <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center items-center">
+              <a
+                href="/problem-statements"
+                className="inline-block px-8 py-4 bg-vintage-orange border-4 border-vintage-darkBrown text-vintage-darkBrown font-bold text-lg md:text-xl retro-text hover:bg-vintage-yellow hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl"
+                style={{
+                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.3)',
+                  textDecoration: 'none'
+                }}
+              >
+                VIEW PROBLEM STATEMENTS
+              </a>
               <a
                 href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
                 target="_blank"
