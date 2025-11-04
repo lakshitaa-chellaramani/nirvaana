@@ -98,18 +98,30 @@ export default function Home() {
               <VintageCard color="teal" className="text-center animate-hidden animate-slide-in-left delay-1200 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                 <div className="retro-text text-sm md:text-base">DAY 1</div>
                 <div className="text-xl md:text-2xl font-bold mt-2 mb-4">IDEATHON</div>
-                <a
-                  href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-vintage-purple border-2 border-vintage-darkBrown text-vintage-cream text-sm font-bold retro-text hover:bg-vintage-darkBrown hover:scale-110 transition-all duration-300"
-                  style={{
-                    boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-                    textDecoration: 'none'
-                  }}
-                >
-                  REGISTER
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://unstop.com/o/7RXoQZB?lb=duhGhN7m&utm_medium=Share&utm_source=gdgdjs39093&utm_campaign=Competitions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 bg-vintage-purple border-2 border-vintage-darkBrown text-vintage-cream text-sm font-bold retro-text hover:bg-vintage-darkBrown hover:scale-110 transition-all duration-300"
+                    style={{
+                      boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    REGISTER
+                  </a>
+                  <a
+                    href="/problem-statements"
+                    className="inline-block px-4 py-2 bg-vintage-orange border-2 border-vintage-darkBrown text-vintage-darkBrown text-sm font-bold retro-text hover:bg-vintage-yellow hover:scale-110 transition-all duration-300"
+                    style={{
+                      boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    VIEW PROBLEMS
+                  </a>
+                </div>
               </VintageCard>
 
               <VintageCard color="pink" className="text-center animate-hidden animate-slide-in-right delay-1200 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
